@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.keedio.flume.serializer.avro</groupId>
+    <artifactId>headerToAvroSerializer</artifactId>
+    <version>0.0.2</version>
+    <packaging>jar</packaging>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    
+    <developers>
+        <developer>
+            <name>Marcelo Valle Ávila</name>
+            <email>mvalle@keedio.org</email>
+            <organization>Keedio</organization>
+            <organizationUrl>http://www.keedio.com</organizationUrl>
+        </developer>
+    </developers>
+    
+    <repositories>
+    	<repository>
+      		<id>Cloudera</id>
+      		<url>https://repository.cloudera.com/content/repositories/releases/</url>
+    	</repository>
+ 	</repositories>
+    
+    
+    <properties>
+        <!-- Generic properties -->
+        <java.version>1.7</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!--  Dependency versions -->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.flume</groupId>
+            <artifactId>flume-ng-core</artifactId>
+            <version>1.6.0-cdh5.8.2</version>
+            <scope>provided</scope>
+        </dependency>
+		<dependency>
+		    <groupId>org.apache.hadoop</groupId>
+		    <artifactId>hadoop-common</artifactId>
+		    <version>2.6.0-cdh5.8.2</version>
+		    <scope>provided</scope>
+		</dependency>
+    </dependencies>
+
+</project>
